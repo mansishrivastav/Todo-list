@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&family=VT323&family=Victor+Mono:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: auto;
+  flex-direction: column;
+  width: fit-content;
+  background-color: #9980fa;
+  margin: 20rem 30rem;
+  padding: 2rem 5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 1rem;
+  flex-direction: column;
+}
+.todoInput {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+input {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  width: 18rem;
+}
+button {
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 15rem;
+  border: none;
+  font-weight: 600;
+  background-color: #27ae60;
+  color: white;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  outline: none;
+  transition: 1s ease-in-out;
+  letter-spacing: 1.5px;
+}
+button:hover::before,
+button:focus::before {
+  opacity: 1;
+}
+
+button:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+p {
+  background-color: #fc427b;
+  width: 18rem;
+  color: whitesmoke;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.fa-solid {
+  background-color: transparent;
+  box-shadow: none;
+  transform: translateY(0);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.fa-solid:hover {
+  transform: scale(1.5);
+}
